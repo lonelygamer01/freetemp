@@ -1,0 +1,9 @@
+[Unit]
+Description=free up temp files
+After=multi-user.target
+
+[Service]
+ExecStart=/path/to/your/script/freetemp.sh
+User=root
+[Install]
+WantedBy=multi-user.target
